@@ -6,6 +6,7 @@ import java.net.URL;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 
+import fr.afcepf.dja.data.ResCalculTva;
 import fr.afcepf.dja.ws.ServiceTva;
 
 public class ClientSoapApp {
@@ -30,6 +31,9 @@ public class ClientSoapApp {
 			System.out.println("*tva="+resTva);
 			String auteur = wsTva.getAuteur();
 			System.out.println("*auteur="+auteur);
+			
+			ResCalculTva resCalculTva  = wsTva.calculerTvaEtTtc(200.0, 20.0);
+			System.out.println("*resCalculTva="+resCalculTva);
 		} catch (MalformedURLException e) {
 				e.printStackTrace();
 		}
