@@ -1,5 +1,6 @@
 cd /d "%~dp0"
-git remote add gitHubOriginAfcepfClientSoap https://didier-tp:....!@github.com/didier-tp/afcepf_clientSoap.git
+git add *
+git commit -a -m "nouvelle version"
 git push -u gitHubOriginAfcepfClientSoap master
 pause
 
