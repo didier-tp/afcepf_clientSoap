@@ -20,6 +20,8 @@ public class ClientSoapApp {
 			//                   + ":8080/serverSoap/ws/tva?wsdl";
 			String urlAsString="http://" + "localhost"
 	                   + ":8080/serverSoap/ws/tva?wsdl";
+			//String urlAsString="http://" + "localhost"
+	          //         + ":8080/soapEjb/ServiceTvaImpl?wsdl";
 			URL wsdlURL = new URL(urlAsString);
 			
 			QName SERVICE_NAME = new QName("http://ws.dja.afcepf.fr/","ServiceTvaImplService");
